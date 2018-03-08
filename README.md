@@ -1,9 +1,10 @@
 # Azure Container Instances Hello World with SSL
 
-This sample is a very simple NodeJS application used to demonstrate [Azure Container Instances](https://azure.microsoft.com/services/container-instances/).
+This sample is a very simple NodeJS application used to demonstrate [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) with SSL.
 
 The packaged version of the application is [available on Docker Hub](https://hub.docker.com/r/containerinstance/helloworld/).
 
+A certificate and a password are required as two files for the SSL connection. If the image is deployed with [the Azure template]( https://github.com/Azure/azure-quickstart-templates/tree/master/201-aci-linuxcontainer-volume-secret), the certificate and password will be mounted as two files inside the container, and Node.js will read these two files and setup the SSL connection.
 
 # Contributing
 
